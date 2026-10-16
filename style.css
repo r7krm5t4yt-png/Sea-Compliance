@@ -850,3 +850,143 @@ color:#0288D1;
 margin-left:8px;
 
 }
+
+/* ==========================================
+MOBILE MENU & SMALL SCREENS
+========================================== */
+
+/* Keep section headings clear of the fixed header when using menu links */
+section{
+
+scroll-margin-top:90px;
+
+}
+
+.menu-toggle{
+
+display:none;
+
+background:none;
+
+border:0;
+
+padding:10px;
+
+cursor:pointer;
+
+}
+
+.menu-toggle span{
+
+display:block;
+
+width:26px;
+
+height:3px;
+
+margin:5px 0;
+
+background:#003B6D;
+
+border-radius:2px;
+
+transition:.3s;
+
+}
+
+.menu-toggle.open span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+
+.menu-toggle.open span:nth-child(2){ opacity:0; }
+
+.menu-toggle.open span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
+
+@media (max-width:900px){
+
+.navbar{ padding:14px 0; }
+
+.logo{ font-size:1.35rem; }
+
+.menu-toggle{ display:block; }
+
+.nav-links{
+
+display:none;
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+right:0;
+
+flex-direction:column;
+
+gap:0;
+
+background:white;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+padding:10px 5%;
+
+}
+
+.nav-links.open{ display:flex; }
+
+.nav-links li{ border-bottom:1px solid #EEF3F7; }
+
+.nav-links li:last-child{ border-bottom:0; }
+
+.nav-links a{ display:block; padding:14px 0; }
+
+.hero{ min-height:auto; padding:120px 20px 80px; }
+
+.hero h1{ font-size:2.4rem; }
+
+.hero p{ font-size:1.05rem; margin-bottom:24px; }
+
+.top-cards{ grid-template-columns:repeat(2,1fr); }
+
+.bottom-row{ grid-template-columns:1fr; }
+
+.sidebar{ width:100%; }
+
+}
+
+@media (max-width:600px){
+
+section{ padding:70px 6%; }
+
+.section-title,
+.platform-text h2{ font-size:1.9rem; }
+
+.hero h1{ font-size:2rem; }
+
+.grid,
+.why-grid,
+.contact-container{ grid-template-columns:1fr; }
+
+.platform-text,
+.dashboard{ min-width:0; }
+
+.dashboard{ padding:20px; }
+
+.dashboard-grid{ gap:12px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+
+.platform-text,
+.dashboard{ flex:1 1 100%; }
+
+.metric span{ font-size:.85rem; }
+
+.metric{ padding:20px 10px; }
+
+.metric h3{ font-size:1.9rem; }
+
+.top-cards{ gap:12px; }
+
+.dashboard-main{ padding:20px; }
+
+.impact-box{ padding:28px; }
+
+}
