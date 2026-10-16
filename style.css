@@ -990,3 +990,27 @@ section{ padding:70px 6%; }
 .impact-box{ padding:28px; }
 
 }
+
+/* Clickable email in Contact Us */
+
+.contact-link{
+
+color:#0288D1;
+
+font-weight:600;
+
+text-decoration:none;
+
+border-bottom:1px solid rgba(2,136,209,.35);
+
+transition:.3s;
+
+}
+
+.contact-link:hover{
+
+color:#003B6D;
+
+border-bottom-color:#003B6D;
+
+}
