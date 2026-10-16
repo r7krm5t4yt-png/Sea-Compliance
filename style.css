@@ -831,3 +831,22 @@ margin-bottom:15px;
 font-family:'Poppins';
 
 }
+/* Demo label for illustrative dashboards */
+
+.demo-label{
+
+display:inline-block;
+
+font-size:.75rem;
+
+font-weight:600;
+
+letter-spacing:.5px;
+
+text-transform:uppercase;
+
+color:#0288D1;
+
+margin-left:8px;
+
+}
